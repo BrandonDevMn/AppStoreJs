@@ -1,8 +1,25 @@
 <html>
 	<head>
-	
+		<!-- configure -->
+		<title>AppStoreJs</title>
+		<link rel="icon" href="./img/icon.jpg">
+		<link rel="apple-touch-icon" href="./img/icon.jpg">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no" name="viewport">
+		
+		<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+		<script src="./js/view/index.js"></script>
 	</head>
-	<body>
-		TEST APP STORE
+	<body onload='onLoad()'>
+		<div id='app'>
+			<div id='content'>
+				<div v-for="app in apps">
+					{{item.name}}
+				</div>
+			</div>
+			<div id='tabBox'>
+				
+			</div>
+		</div>
 	</body>
 </html>
