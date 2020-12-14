@@ -1,0 +1,21 @@
+#appList
+{
+    display: flex;
+}
+
+.appListing
+{
+    border: 1px solid black;
+    width: 5vw;
+    margin: 10px;
+}
+
+.appIcon
+{
+    width: 5vw;
+}
+
+.appLabel
+{
+    text-align: center;
+}

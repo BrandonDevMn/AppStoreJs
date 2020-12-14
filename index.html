@@ -11,11 +11,16 @@
 		
 		<!-- imports -->
 		<script src="./js/view/index.js"></script>
+		<link rel="stylesheet" href="./css/index.css">
 	</head>
 	<body onload='onLoad()'>
 		<div id='app'>
 			<div id='content'>
-				
+				<!-- the view for the list of apps -->
+				<div id='appList' class='view'></div>
+
+				<!-- the view for a single app-->
+				<div id='appSingle' class='view' onview='loadAppSingleUI()'></div>
 			</div>
 			<div id='tabBox'>
 				
