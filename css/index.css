@@ -1,3 +1,27 @@
+#app
+{
+	background-color: black;
+	color: white;
+}
+
+#content
+{
+	height: 90%;
+}
+
+#tabBox
+{
+	display: flex;
+	height: 10%;
+	opacity: 0.6;
+	background-color: grey;
+}
+
+.tab
+{
+	margin: 10px;
+}
+
 #appList
 {
     display: flex;
@@ -6,13 +30,13 @@
 .appListing
 {
     border: 1px solid black;
-    width: 5vw;
+    height: 10vh;
     margin: 10px;
 }
 
 .appIcon
 {
-    width: 5vw;
+	height: 10vh;
 }
 
 .appLabel

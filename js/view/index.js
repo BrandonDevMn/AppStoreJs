@@ -10,11 +10,20 @@ var currentApp = null;
 
 // called on load
 function onLoad() {
+	// set height
+	setAppSize();
+	
 	// default view
 	switchView('appList');
 
 	// load each url for meta data, then load UI
 	loadUrlFromList(0, loadAppListUI);
+}
+
+function setAppSize() {
+	var app = document.getElementById('app');
+	app.style.height = window.innerHeight;
+	app.style.width = window.innerWidth;
 }
 
 function loadAppSingleUI()
